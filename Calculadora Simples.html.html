@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CALC</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <fieldset>
+        
+<div id="area"><input type="number" name="txtn1" id="txtn1"> +
+<input type="number" name="txtn2" id="txtn2"> 
+    <input type="button" value="SOMAR" onclick="somar()">
+    <div id="res">Resultado</div>
+
+<br>
+<div id="area"><input type="number" name="txtn1" id="txtn3"> -
+<input type="number" name="txtn2" id="txtn4">
+<input type="button" value="SUBTRAIR" onclick="subtrair()">
+<div id="resb">Resultado</div>
+<br>
+<div id="area"></div>    <input type="number" name="txtn1" id="txtn5"> x
+<input type="number" name="txtn2" id="txtn6">
+<input type="button" value="MULTIPLICAR" onclick="multiplicar()">
+<div id="resm">Resultado</div>
+
+<br>
+<div id="area"></div>    <input type="number" name="txtn7" id="txtn7"> /
+<input type="number" name="txtn8" id="txtn8">
+<input type="button" value="DIVIDIR" onclick="dividir()">
+<div id="dvs">Resultado</div>
+
+<br>
+
+</fieldset>
+    
+
+
+    <script>
+        function somar() {
+            let tn1 = window.document.getElementById('txtn1')
+            let tn2 = window.document.getElementById('txtn2')
+            let res = window.document.getElementById('res')
+            let n1 = Number(tn1.value)
+            let n2 = Number(tn2.value)
+            let s = n1 + n2
+            res.innerHTML = ("Resultado =  " +s)
+        }
+
+        function subtrair() {
+            let tn1 = window.document.getElementById('txtn3')
+            let tn2 = window.document.getElementById('txtn4')
+            let res = window.document.getElementById('res')
+            let n3 = Number(tn1.value)
+            let n4 = Number(tn2.value)
+            let sab = n3 - n4
+            resb.innerHTML = ("Resultado =  " +sab)
+        }
+
+        function multiplicar() {
+            let tn1 = window.document.getElementById('txtn5')
+            let tn2 = window.document.getElementById('txtn6')
+            let res = window.document.getElementById('res')
+            let n5 = Number(tn1.value)
+            let n6 = Number(tn2.value)
+            let sam = n5 * n6
+            resm.innerHTML = ("Resultado =  " +sam)
+        }
+
+        function dividir() {
+            let tn1 = window.document.getElementById('txtn7')
+            let tn2 = window.document.getElementById('txtn8')
+            let res = window.document.getElementById('res')
+            let n7 = Number(tn1.value)
+            let n8 = Number(tn2.value)
+            let resdv = n7 / n8
+            dvs.innerHTML = ("Resultado =  " +resdv)
+        }
+
+      
+
+    </script>
+
+
+
+</body>
+
+<style>
+    
+    body {
+    background-color: burlywood;
+    font-family: Arial;
+    position: relative;
+    
+
+}
+
+
+
+
+
+
+}
+
+
+
+
+</style>
+</html>
